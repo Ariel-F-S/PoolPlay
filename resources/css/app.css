@@ -1,0 +1,43 @@
+.carousel-img {
+    width: 100%;
+    height: 600px;           /* Tetap sesuai ukuran carousel pilihanmu */
+    object-fit: contain;     
+    background-color: #f8f9fa;
+}
+
+/* Menentukan tinggi tetap untuk area gambar card produk agar seragam */
+.product-img-wrapper {
+    height: 200px;              /* Kunci tinggi container gambar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #E8F8FC;
+}
+
+/* Memastikan gambar/foto produk tidak melar dan terpotong rapi */
+.product-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         
+    object-position: center;
+}
+
+/* Mengatur ukuran emoji agar seimbang dengan foto */
+.product-img-wrapper .emoji-icon {
+    font-size: 80px;
+    line-height: 1;
+}
+
+
+/* ANIMASI HOVER & SHADOW HALUS CARD PRODUK */
+
+.card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important; /* Shadow awal tipis/halus */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transisi animasi mulus */
+}
+
+.card:hover {
+    transform: translateY(-5px);                          /* Card sedikit naik saat kursor menempel */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important; /* Bayangan muncul lebih tegas */
+}
